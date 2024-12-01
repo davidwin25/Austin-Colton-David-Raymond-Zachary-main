@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Austin-Colton-David-Raymond-Zachary</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <script src="https://d3js.org/topojson.v3.min.js"></script>
+        <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <script src="js/app.js"></script>
+
+        <div class="flex-col">
+            <div id="line-chart-container" class="chart-container"></div>
+            <div id="bar-chart-container" class="chart-container">
+                <div class="flex-col container" style="width: 10%;">
+                    <select id="bar-year-select">
+                        <option value="1998-2005">1998-2005</option>
+                        <option value="1998-2010">1998-2010</option>
+                        <option value="1998-2015">1998-2015</option>
+                        <option value="1998-2020">1998-2020</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pie-chart-container">
+                <h3>Number of Players by Country</h3>
+                <svg class="pie-chart"></svg>
+                <div class="year-buttons"></div>
+            </div>
+            
+    <div id="scatter-chart-container" class="chart-container">
+        <div style="text-align: center; margin-bottom: 10px;">
+            <select id="team-dropdown" style="padding: 5px; font-size: 14px;"></select>
+            <button id="autoplay-button" style="padding: 5px 10px; font-size: 14px;">Autoplay</button>
+        </div>
+    
+                <h2>Top Teams Earnings (1998-2020)</h2>
+                
+                <div id="scatterplot"></div>
+            </div>
+        </div>
+    </body>
+</html>
